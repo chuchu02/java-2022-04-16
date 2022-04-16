@@ -11,13 +11,17 @@ public class test3 {
 	    int a;
 	    a = ran.nextInt(100);
 	    int b = ran.nextInt(100);
-	    
+	 
 	    // `+` => 문장과 문자을 합친다.
 	    System.out.println("a : " + a);
 	    System.out.println("b : " + b);
 	    
 	    // 여기서 부터 
+	    int c;
+	    c = a;
 	    a = b;
+	    b = c;
+	    
 	    
 
 
