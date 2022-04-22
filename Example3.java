@@ -2,49 +2,267 @@
 public class Example3 {
 
 	public static void main(String[] args) {
-		// ì§ìˆ˜ì¸ì§€ í™€ìˆ˜ì¸ì§€ íŒë³„
-		int num = 7;
-		if(num % 2 == 0) {
-			System.out.println("ì§ìˆ˜");
-		}else {
-			System.out.println("í™€ìˆ˜");
-		}
-		// ë‘ìˆ˜ num1ê³¼ num2ê°€ ì£¼ì–´ì§‘ë‹ˆë‹¤.
-		// ë‘ ìˆ˜ì¤‘ ë” í°ìˆ˜ì—ì„œ ë” ìž‘ì€ ìˆ˜ë¥¼ ëº€ ê²°ê³¼ë¥¼ ì¶œë ¥í•´ì£¼ì„¸ìš”.
-		int num1 = 10;
-	    int num2 = 15;
-	    
-	    if(num1 > num2) {
-	    	System.out.printf("%d\n", num1 - num2);
-	    }else {
-	    		System.out.printf("%d\n", num2 - num1);
-	    	}
-	 // ë¬¸ì œ : í• ì¸ ëŒ€ìƒì¸ì§€ ì•„ë‹Œì§€ ì¶œë ¥í•´ì£¼ì„¸ìš”.
-	 // ì¡°ê±´ : ë‚˜ì´ê°€ 19ì„¸ ì´í•˜ì´ê±°ë‚˜ 60ì„¸ ì´ìƒì´ë©´ í• ì¸ ëŒ€ìƒìž…ë‹ˆë‹¤.
-	 // ì¡°ê±´ : ì¶œë ¥ì˜ˆì‹œ ì²˜ëŸ¼ ì¶œë ¥ë˜ì–´ì•¼ í•©ë‹ˆë‹¤.
-	 // ì¡°ê±´ : `êµ¬í˜„ì‹œìž‘` ë¶€ë¶„ë§Œ ìˆ˜ì • í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤..
-	 // ì¡°ê±´ : 2ê°€ì§€ ì´ìƒì˜ ë°©ë²•ìœ¼ë¡œ í’€ì–´ì•¼ í•©ë‹ˆë‹¤.
-	    int age = 65;
-	    if(age <= 19 || age >= 60) {
-	    	System.out.println("í• ì¸ ëŒ€ìƒìž…ë‹ˆë‹¤.");
-	    }
-	    else{
-	    	System.out.println("í• ì¸ ëŒ€ìƒì´ ì•„ë‹™ë‹ˆë‹¤.");
-	    }
-	    /*
-	    ì–´ë–¤ ì°¨ì˜ ë†’ì´ê°€ 170cm ìž…ë‹ˆë‹¤..
+		// Â¦¼öÀÎÁö È¦¼öÀÎÁö ÆÇº°
+				int num = 7;
+				if(num % 2 == 0) {
+					System.out.println("Â¦¼ö");
+				}else {
+					System.out.println("È¦¼ö");
+				}
+				// µÎ¼ö num1°ú num2°¡ ÁÖ¾îÁý´Ï´Ù.
+				// µÎ ¼öÁß ´õ Å«¼ö¿¡¼­ ´õ ÀÛÀº ¼ö¸¦ »« °á°ú¸¦ Ãâ·ÂÇØÁÖ¼¼¿ä.
+//				int num1 = 10;
+//			    int num2 = 15;
+//			    
+//			    if(num1 > num2) {
+//			    	System.out.printf("%d\n", num1 - num2);
+//			    }else {
+//			    		System.out.printf("%d\n", num2 - num1);
+//			    	}
+			 // ¹®Á¦ : ÇÒÀÎ ´ë»óÀÎÁö ¾Æ´ÑÁö Ãâ·ÂÇØÁÖ¼¼¿ä.
+			 // Á¶°Ç : ³ªÀÌ°¡ 19¼¼ ÀÌÇÏÀÌ°Å³ª 60¼¼ ÀÌ»óÀÌ¸é ÇÒÀÎ ´ë»óÀÔ´Ï´Ù.
+			 // Á¶°Ç : Ãâ·Â¿¹½Ã Ã³·³ Ãâ·ÂµÇ¾î¾ß ÇÕ´Ï´Ù.
+			 // Á¶°Ç : `±¸Çö½ÃÀÛ` ºÎºÐ¸¸ ¼öÁ¤ ÇÒ ¼ö ÀÖ½À´Ï´Ù..
+			 // Á¶°Ç : 2°¡Áö ÀÌ»óÀÇ ¹æ¹ýÀ¸·Î Ç®¾î¾ß ÇÕ´Ï´Ù.
+			    int age = 20; // ÀÌ °ªÀ» ¹Ù²ã°¡¸é¼­ ½ÇÇàÇØº¸¼¼¿ä.
 
-	    ì´ ì°¨ëŠ” 3ê°œì˜ í„°ë„ì„ ì°¨ë¡€ëŒ€ë¡œ ì§€ë‚˜ê²Œ ë  ê²ƒìž…ë‹ˆë‹¤.
+			    System.out.println("´ç½ÅÀÇ ³ªÀÌ´Â " + age + "»ì ÀÔ´Ï´Ù.");
 
-	    í„°ë„ì˜ ë†’ì´ê°€ ì°¨ì˜ ë†’ì´ë³´ë‹¤ ê°™ê±°ë‚˜ ë‚®ë‹¤ë©´ ì°¨ëŠ” í„°ë„ê³¼ ì¶©ëŒí•˜ì—¬ ì‚¬ê³ ê°€ ë‚©ë‹ˆë‹¤.
+			    // ±¸Çö½ÃÀÛ
+//			    if(age <= 19 || age >=60) {
+//			    	System.out.println("ÇÒÀÎ´ë»óÀÔ´Ï´Ù.");
+//			    }
+//			    if(age > 19 && age < 60) {
+//			    	System.out.println("ÇÒÀÎ´ë»óÀÌ ¾Æ´Õ´Ï´Ù.");
+//			    }
+//			    if(age <= 19 || age >=60) {
+//	    	System.out.println("ÇÒÀÎ´ë»óÀÔ´Ï´Ù.");
+//		    }else {
+//		    	System.out.println("ÇÒÀÎ´ë»óÀÌ ¾Æ´Õ´Ï´Ù.");
+//		    }
+			    // if¹®¸¸ ÀÌ¿ëÇØ¼­ Ç®±â
+			    // Ãâ·Â => ÇÒÀÎ´ë»óÀÔ´Ï´Ù. ¶Ç´Â ÇÒÀÎ ´ë»óÀÌ ¾Æ´Õ´Ï´Ù.
+			    /*
+			    ¾î¶² Â÷ÀÇ ³ôÀÌ°¡ 170cm ÀÔ´Ï´Ù..
+			    ÀÌ Â÷´Â 3°³ÀÇ ÅÍ³ÎÀ» Â÷·Ê´ë·Î Áö³ª°Ô µÉ °ÍÀÔ´Ï´Ù.
+			    ÅÍ³ÎÀÇ ³ôÀÌ°¡ Â÷ÀÇ ³ôÀÌº¸´Ù °°°Å³ª ³·´Ù¸é Â÷´Â ÅÍ³Î°ú Ãæµ¹ÇÏ¿© »ç°í°¡ ³³´Ï´Ù.
+			    Â÷°¡ ¸ðµç ÅÍ³ÎÀ» ¹«»çÈ÷ Àß Åë°úÇÏ¸é PASS ¸¦ Ãâ·ÂÇÏ°í, Ãæµ¹ÇÑ´Ù¸é CRASH ¸¦ Ãâ·ÂÇÏ¼¼¿ä.
+			    */
+//			    int tunnel1 = 180;
+//			    int tunnel2 = 182;
+//			    int tunnel3 = 172;
+//			    int car = 180;
+//			    
+//			    if(tunnel1 <= car) {
+//			    	System.out.println("CRASH");
+//			    }else {
+//			    	System.out.println("PASS");
+//			    }
+//			    if(tunnel2 <= car) {
+//			    	System.out.println("CRASH");
+//			    }else {
+//			    	System.out.println("PASS");
+//			    }
+//			    if(tunnel3 <= car) {
+//			    	System.out.println("CRASH");
+//			    }else {
+//			    	System.out.println("PASS");
+//			    }
+			 // 1. 1 ~ 100±îÁö Ãâ·Â
+//			    for(int i =1; i <=100; i++) {
+//			    	System.out.println(i);
+//			    }
+			    // 2. -25 ~ 50±îÁö Ãâ·Â
+//			    for(int i = -25; i <=50; i++) {
+//			    	System.out.println(i);
+//			    }
+			    // 3. 1 ~ 100 ±îÁö Â¦¼ö¸¸ Ãâ·Â 
+//			    for(int i = 1; i<=100; i++) {
+//			    	if(i%2==0) {
+//			    		System.out.println(i);
+//			    	}
+//			    }
+			    // Â¦¼ö ÆÇº° ¹æ¹ý : 2·Î ³ª´©¾î ³ª¸ÓÁö°¡ 0ÀÌ¸é Â¦¼ö.
+			    
+			    // 4. 100 ~ 200 »çÀÌÀÇ È¦¼ö¸¸ Ãâ·Â
+			    // È¦¼ö ÆÇº° ¹æ¹ý : Â¦¼ö°¡ ¾Æ´Ï¸é È¦¼ö
+//			    for(int i = 100; i <= 200; i++) {
+//			    	if(i%2!=0) {
+//			    		System.out.println(i);
+//			    	}
+//			    }
+			    // 5. 1 ~ 500 »çÀÌÀÇ ¼ö Áß 4ÀÇ ¹è¼ö¸¸ Ãâ·Â
+			    // nÀÇ ¹è¼ö ÆÇº° ¹æ¹ý : ¾î¶² ¼ýÀÚ¸¦ nÀ¸·Î ³ª´« ³ª¸ÓÁö°¡ 0ÀÌ¸é nÀÇ ¹è¼ö
+//			    for(int i = 1; i <=500; i++) {
+//			    	if(i%4 == 0) {
+//			    		System.out.println(i);
+//			    	}
+//			    }
+			    // 6. 1 ~ 1000 »çÀÌÀÇ ¼ö Áß 1000ÀÇ ¾à¼ö¸¸ Ãâ·Â -> 1000 % a == 0
+			    // ¾à¼ö -> 1000À» a·Î ³ª´©¾úÀ» ¶§ ³ª´©¾î ¶³¾îÁö¸é¸¦ a 1000ÀÇ ¾à¼ö¶ó°í ÇÑ´Ù.
+			    // ¾à¼ö´Â 1 ~ ÀÚ±âÀÚ½Å¸¸ ´ë»ó ¼ö·Î ÇÑ´Ù.
+			    // ³ª´©¾î ¶³¾îÁø´Ù´Â °ÍÀº ³ª´©¾úÀ» ¶§ ³ª¸ÓÁö°¡ 0ÀÌ¶ó´Â °ÍÀ» ÀÇ¹ÌÇÑ´Ù.
+//				for(int i = 1; i <= 1000; i++) {
+//					if(1000%i==0) {
+//						System.out.println(i);
+//					}
+//				}
 
-	    ì°¨ê°€ ëª¨ë“  í„°ë„ì„ ë¬´ì‚¬ížˆ ìž˜ í†µê³¼í•˜ë©´ PASS ë¥¼ ì¶œë ¥í•˜ê³ , ì¶©ëŒí•œë‹¤ë©´ CRASH ë¥¼ ì¶œë ¥í•˜ì„¸ìš”.
-	    */
-	    int tunnel1 = 180;
-	    int tunnel2 = 182;
-	    int tunnel3 = 172;
+			    // 7. 1 ~ 1000 »çÀÌÀÇ ¼ö Áß 3ÀÇ ¹è¼ö ÀÌ¸é¼­ 5ÀÇ ¹è¼öÀÎ ¼ö¸¸ Ãâ·Â
+//			    for(int i = 1; i <=1000; i++) {
+//			    	if(i%3 == 0) {
+//			    		if(i%5 ==0) {
+//			    			System.out.println(i);
+//			    		}
+//			    	}
+//			    }
+			    // 8. 1 2 3 4 5 10¹ø Ãâ·Â
+//			    for(int i= 1; i <=5; i++) {
+//			    	for(int j=1; j<=10; j++) {
+//			    		System.out.printf("%d", i);
+//			    	}
+//			    	System.out.println();
+//			    }
+			    // 9. ±¸±¸´Ü 2~9´Ü Ãâ·Â
+//			    for(int i = 2; i <= 9; i++) {
+//			    	for(int j = 1; j <= 9; j++) {
+//			    		System.out.printf("%d * %d = %d\n", i,j,i*j);
+//			    	}
+//			    }
+			    // 10. ±¸±¸±¸´Ü Ãâ·Â
+			    /* 
+			    1 * 1 * 1 = 1
+			    1 * 1 * 2 = 2
+			    ...
+			    2 * 1 * 1 = 2
+			    ...
+			    9 * 9 * 9 = 729
+
+			    */
+//			    for(int i = 1; i <=9; i++) {
+//			    	for(int j = 1; j<=9; j++) {
+//			    		for(int n = 1; n<=9; n++) {
+//			    			System.out.printf("%d * %d * %d = %d\n", i,j,n, i*j*n);
+//			    		}
+//			    	}
+//			    }
+			 // Ãâ·Â
+//			    for(int i=1; i <=3; i++) {
+//			    	for(int j = 0; j < i; j++) {
+//			    		System.out.printf("*");
+//			    	}
+//			    	System.out.println("");
+//			    }
+			    /*
+			    ³ôÀÌ : [3]
+				
+			    *
+			    **
+			    ***
+
+
+			    */
+			    
+//			    for(int i = 1; i <=5; i++) {
+//			    	for(int j = 0; j < i; j++) {
+//			    		System.out.printf("*");
+//			    	}
+//			    	System.out.println();
+//			    }
+			    /*
+
+			    ³ôÀÌ : [5]
+			    
+			    *
+			    **
+			    ***
+			    ****
+			    *****
+
+			    */
+//			    for(int i = 1; i <=7; i++) {
+//			    	for(int j = 0; j < i; j++) {
+//			    		System.out.printf("*");
+//			    	}
+//			    	System.out.println();
+//			    }
+			    /*
+
+			    ³ôÀÌ : [7]
+
+			    *
+			    **
+			    ***
+			    ****
+			    *****
+			    ******
+			    *******
+			    
+			    */
+			 // Ãâ·Â
+			    for(int i = 1; i <=3; i++) {
+			    	for(int j = 3; j > 0; j--) {
+			    		if(i<j) {
+			    			System.out.printf(" ");
+			    		}else {
+			    			System.out.printf("*");
+			    		}
+			    	}
+			    	System.out.println("");
+			    }
+			    /*
+
+			    ³ôÀÌ : [3]
+
+			      *
+			     **
+			    ***
+			    
+			    */
+//			    for(int i=1; i <= 5; i++) {
+//			    	for(int j = 5; j > 0; j--) {
+//			    		if(i<j) {
+//			    			System.out.printf(" ");
+//			    		}else {
+//			    			System.out.printf("*");
+//			    		}
+//			    	}
+//			    	System.out.println();
+//			    }
+			    /*
+
+			    ³ôÀÌ : [5]
+
+			        *
+			       **
+			      ***
+			     ****
+			    *****
+
+			    */
+			    for(int i=1; i <= 7; i++) {
+			    	for(int j = 7; j > 0; j--) {
+			    		if(i<j) {
+			    			System.out.printf(" ");
+			    		}else {
+			    			System.out.printf("*");
+			    		}
+			    	}
+			    	System.out.println();
+			    }
+			    /*
+
+			    ³ôÀÌ : [7]
+
+			          *
+			         **
+			        ***
+			       ****
+			      *****
+			     ******
+			    *******
+
+			    */
 	}
+
 }
-
-
-	
