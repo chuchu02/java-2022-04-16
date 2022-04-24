@@ -29,17 +29,24 @@ public class gugu {
 			System.out.println("æ»≥Á«œººø‰~~");
 		}
 	}
+//	public static void greeting2(int lang , int num) {
+//		for(int  i = 0; i < num; i++) {
+//			if(lang == 2) {
+//				System.out.println("«œ¿Ã~");
+//			}else if(lang == 3) {
+//				System.out.println("∫¿¡Í");
+//			}else if(lang == 1) {
+//				System.out.println("æ»≥Á«œººø‰~~");
+//			}
+//		}
+//	}
+	//πÊπ˝ 2
 	public static void greeting2(int lang , int num) {
 		for(int  i = 0; i < num; i++) {
-			if(lang == 2) {
-				System.out.println("«œ¿Ã~");
-			}else if(lang == 3) {
-				System.out.println("∫¿¡Í");
-			}else if(lang == 1) {
-				System.out.println("æ»≥Á«œººø‰~~");
-			}
+			greeting1(lang);
 		}
 	}
+	
 	public static void main(String[] args) {
 		// ±∏±∏¥‹
 //		gugu(2 , 9);
