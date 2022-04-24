@@ -20,22 +20,22 @@ public class gugu {
 		}
 	}
 	
-	public static void greeting1(int x) {
-		if(x == 2) {
+	public static void greeting1(int lang) {
+		if(lang == 2) {
 			System.out.println("«œ¿Ã~");
-		}else if(x == 3) {
+		}else if(lang == 3) {
 			System.out.println("∫¿¡Í");
-		}else if(x == 1) {
+		}else if(lang == 1) {
 			System.out.println("æ»≥Á«œººø‰~~");
 		}
 	}
-	public static void greeting2(int x , int y) {
-		for(int  i = 0; i < y; i++) {
-			if(x == 2) {
+	public static void greeting2(int lang , int num) {
+		for(int  i = 0; i < num; i++) {
+			if(lang == 2) {
 				System.out.println("«œ¿Ã~");
-			}else if(x == 3) {
+			}else if(lang == 3) {
 				System.out.println("∫¿¡Í");
-			}else if(x == 1) {
+			}else if(lang == 1) {
 				System.out.println("æ»≥Á«œººø‰~~");
 			}
 		}
@@ -58,6 +58,7 @@ public class gugu {
 //		
 //		self(15);
 		
+		//∏≈∞≥ πÆ¡¶3
 		greeting1(1);
 //		greeting1(2);
 //		greeting1(3);
