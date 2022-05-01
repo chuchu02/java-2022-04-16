@@ -1,5 +1,7 @@
 package java_exam;
 
+import java.util.Scanner;
+
 public class DAY5 {
 
 	// 제곱 함수
@@ -39,11 +41,24 @@ public class DAY5 {
 //		
 //		int rt2 = test(5);
 //		System.out.println(rt2 * 2);
-
+		
+		Scanner scan = new Scanner(System.in);
 		// 돈, 뽑을 음료수
 		// 0 = 콜라(1200) , 1 = 사이다(1000) , 2 = 커피(800) , 3 = 생수(600)
-
-		String beverage = vendingMachine(800, 1);
+		
+		System.out.println("==================음료수목록==================");
+		System.out.println("0 : 콜라(1200원)");
+		System.out.println("1 : 사이다(1000원)");
+		System.out.println("2 : 커피(800원)");
+		System.out.println("3 : 생수(600원)");
+		System.out.println("====================================");
+		System.out.print("얼마의 금액을 투입하시겠습니까 : ");
+		int inputMoney = Integer.parseInt(scan.nextLine());
+		
+		System.out.print("어떤 음료수를 선택하시겠습니까 : ");
+		int bno = Integer.parseInt(scan.nextLine());
+		
+		String beverage = vendingMachine(inputMoney , bno);
 
 		if (beverage == null) {
 			System.out.println("홍길동이 음료수를 뽑을 수 없습니다.");
@@ -51,13 +66,6 @@ public class DAY5 {
 			System.out.printf("홍길동이 %s를 벌컥벌컥 마십니다.\n", beverage);
 		}
 		
-		String beverage2 = vendingMachine(100, 1);
-		
-		if (beverage2 == null) {
-			System.out.println("홍길순이 음료수를 뽑을 수 없습니다.");
-		} else {
-			System.out.printf("홍길순이 %s를 벌컥벌컥 마십니다.", beverage);
-		}
 	}
 
 }
